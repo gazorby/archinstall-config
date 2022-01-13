@@ -1,0 +1,69 @@
+{
+  "audio": "pipewire",
+  "bootloader": "systemd-bootctl",
+  "custom-commands": [
+    "usermod -aG docker gazorby",
+    "pacman-key --init",
+    "pacman-key --recv-key FBA220DFC880C036 --keyserver keyserver.ubuntu.com",
+    "pacman-key --lsign-key FBA220DFC880C036",
+    "pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'",
+    "echo -e '\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist\n' | sudo tee -a /etc/pacman.conf",
+    "pacman -Syyu paru scc asdf-vm powerpill snapper-rollback btrfs-du downgrade, scc"
+  ],
+  "filesystem": "btrfs",
+  "gfx_driver": "VMware / VirtualBox (open-source)",
+  "harddrives": [
+    "/dev/nvme0n1",
+    "/dev/sda"
+  ],
+  "hostname": "bigbox",
+  "kernels": [
+    "linux"
+  ],
+  "keyboard-language": "us",
+  "mirror-region": "Worldwide",
+  "nic": {
+    "NetworkManager": true,
+    "nic": "Use NetworkManager (necessary to configure internet graphically in GNOME and KDE)"
+  },
+  "ntp": true,
+  "packages": [
+    "bash",
+    "bat",
+    "binutils",
+    "bpython",
+    "chezmoi",
+    "docker",
+    "dust",
+    "exa",
+    "fakeroot",
+    "fd",
+    "fish",
+    "fzf",
+    "git",
+    "git-delta",
+    "highlight",
+    "htop",
+    "hyperfine",
+    "neofetch",
+    "neovim",
+    "openssh",
+    "procs",
+    "ripgrep",
+    "snap-pac",
+    "snapper",
+    "starship",
+    "ufw",
+    "wget",
+    "yarn"
+],
+  "profile": "gnome",
+  "services": [
+    "docker",
+    "snapper-timeline.timer"
+  ],
+  "swap": true,
+  "sys-encoding": "utf-8",
+  "sys-language": "en_US",
+  "timezone": "Europe/Paris"
+}

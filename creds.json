@@ -1,0 +1,9 @@
+{
+    "!encryption-password" : "",
+    "!root-password" : "",
+    "!users" : {
+        "gazorby": {
+            "!passowrd": ""
+        }
+    }
+}
