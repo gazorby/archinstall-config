@@ -24,7 +24,7 @@
                         "@vm": "/var/lib/libvirt"
                     }
                 },
-                "encrypted": false,
+                "encrypted": true,
                 "filesystem": {
                     "format": "btrfs"
                 },
