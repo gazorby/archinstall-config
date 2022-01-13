@@ -1,9 +1,9 @@
 {
-    "!encryption-password" : "",
-    "!root-password" : "",
+    "!encryption-password" : "1234",
+    "!root-password" : "1234",
     "!users" : {
         "gazorby": {
-            "!passowrd": ""
+            "!passowrd": "1234"
         }
     }
 }
