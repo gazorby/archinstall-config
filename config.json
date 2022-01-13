@@ -13,7 +13,6 @@
   "filesystem": "btrfs",
   "gfx_driver": "VMware / VirtualBox (open-source)",
   "harddrives": [
-    "/dev/nvme0n1",
     "/dev/sda"
   ],
   "hostname": "bigbox",
