@@ -1,9 +1,11 @@
 {
     "!encryption-password" : "1234",
     "!root-password" : "1234",
+    "!superusers": {},
     "!users" : {
         "gazorby": {
             "!password": "1234"
         }
     }
+
 }
