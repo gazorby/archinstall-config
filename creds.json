@@ -3,7 +3,7 @@
     "!root-password" : "1234",
     "!users" : {
         "gazorby": {
-            "!passowrd": "1234"
+            "!password": "1234"
         }
     }
 }
