@@ -8,8 +8,7 @@
     "pacman-key --lsign-key FBA220DFC880C036",
     "pacman -U --noconfirm 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'",
     "echo -e '\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist\n' | sudo tee -a /etc/pacman.conf",
-    "pacman -Syyu --noconfirm paru",
-    "paru -S --noconfirm scc asdf-vm powerpill snapper-rollback btrfs-du downgrade scc"
+    "pacman -Syyu --noconfirm paru downgrade powerpill asdf-vm"
   ],
   "filesystem": "btrfs",
   "gfx_driver": "VMware / VirtualBox (open-source)",
