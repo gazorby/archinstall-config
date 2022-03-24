@@ -18,10 +18,8 @@
                     "subvolumes": {
                         "@": "/",
                         "@home": "/home",
-                        "@pkg": "/var/cache/pacman/pkg",
-                        "@log": "/var/log",
-                        "@srv": "/srv",
-                        "@vm": "/var/lib/libvirt"
+                        "@snapshots": "/.snapshots",
+                        "@var_log": "/var/log"
                     }
                 },
                 "encrypted": true,
