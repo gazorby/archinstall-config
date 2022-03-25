@@ -19,7 +19,9 @@
                         "@": "/",
                         "@home": "/home",
                         "@snapshots": "/.snapshots",
-                        "@var_log": "/var/log"
+                        "@log": "/var/log",
+                        "@pkg": "/var/cache/pacman/pkg",
+                        "@VMs": "/var/lib/libvirt/"
                     }
                 },
                 "encrypted": true,
