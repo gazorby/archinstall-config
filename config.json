@@ -56,10 +56,11 @@
     "wget",
     "yarn"
 ],
-  "profile": "gnome",
+  "profile": "kde",
   "services": [
-    "docker",
-    "snapper-timeline.timer"
+    "NetworkManager.service",
+    "docker.service",
+    "snapper-timeline.timer",
   ],
   "swap": true,
   "sys-encoding": "utf-8",
