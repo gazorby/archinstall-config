@@ -59,7 +59,7 @@
   "services": [
     "NetworkManager.service",
     "docker.service",
-    "snapper-timeline.timer",
+    "snapper-timeline.timer"
   ],
   "swap": true,
   "sys-encoding": "utf-8",
