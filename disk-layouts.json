@@ -26,7 +26,8 @@
                 },
                 "encrypted": true,
                 "filesystem": {
-                    "format": "btrfs"
+                    "format": "btrfs",
+                    "compression": true
                 },
                 "format": true,
                 "mountpoint": "/",
