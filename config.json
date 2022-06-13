@@ -12,13 +12,10 @@
   ],
   "filesystem": "btrfs",
   "gfx_driver": "VMware / VirtualBox (open-source)",
-  "harddrives": [
-    "/dev/sda"
-  ],
+  "archinstall-language": "English",
+  "harddrives": ["/dev/sda"],
   "hostname": "bigbox",
-  "kernels": [
-    "linux"
-  ],
+  "kernels": ["linux"],
   "keyboard-language": "us",
   "mirror-region": {
     "France": {
@@ -81,7 +78,7 @@
     "ufw",
     "wget",
     "yarn"
-],
+  ],
   "profile": "kde",
   "services": [
     "NetworkManager.service",
