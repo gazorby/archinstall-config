@@ -1,41 +1,50 @@
 {
-    "/dev/sda": {
-        "partitions": [
-            {
-                "boot": true,
-                "encrypted": false,
-                "filesystem": {
-                    "format": "fat32"
-                },
-                "format": true,
-                "mountpoint": "/boot",
-                "size": "513MB",
-                "start": "5MB",
-                "type": "primary"
+  "/dev/sda": {
+    "partitions": [
+      {
+        "boot": true,
+        "encrypted": false,
+        "filesystem": {
+          "format": "fat32"
+        },
+        "format": true,
+        "mountpoint": "/boot",
+        "size": "513MB",
+        "start": "5MB",
+        "type": "primary"
+      },
+      {
+        "btrfs": {
+          "subvolumes": {
+            "@": { "mountpoint": "/", "options": ["compress"] },
+            "@home": { "mountpoint": "/home", "options": ["compress"] },
+            "@snapshots": {
+              "mountpoint": "/.snapshots",
+              "options": ["compress"]
             },
-            {
-                "btrfs": {
-                    "subvolumes": {
-                        "@": "/",
-                        "@home": "/home",
-                        "@snapshots": "/.snapshots",
-                        "@log": "/var/log",
-                        "@pkg": "/var/cache/pacman/pkg",
-                        "@VMs": "/var/lib/libvirt/"
-                    }
-                },
-                "encrypted": true,
-                "filesystem": {
-                    "format": "btrfs",
-                    "compression": true
-                },
-                "format": true,
-                "mountpoint": "/",
-                "size": "100%",
-                "start": "518MB",
-                "type": "primary"
+            "@log": { "mountpoint": "/var/log", "options": ["compress"] },
+            "@pkg": {
+              "mountpoint": "/var/cache/pacman/pkg",
+              "options": ["compress"]
+            },
+            "@VMs": {
+              "mountpoint": "/var/lib/libvirt/",
+              "options": ["compress"]
             }
-        ],
-        "wipe": true
-    }
+          }
+        },
+        "encrypted": true,
+        "filesystem": {
+          "format": "btrfs",
+          "mount_options": ["compress=zstd"]
+        },
+        "format": true,
+        "mountpoint": "/",
+        "size": "100%",
+        "start": "518MB",
+        "type": "primary"
+      }
+    ],
+    "wipe": true
+  }
 }
