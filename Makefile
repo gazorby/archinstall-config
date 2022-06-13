@@ -2,6 +2,7 @@
 
 .PHONY: install-latest-archinstall
 archinstall:
+	pacman -Sy --noconfirm python-pip
 	pip install -U archinstall
 
 .PHONY: archinstall-git
