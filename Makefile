@@ -1,5 +1,9 @@
 .DEFAULT_GOAL := dry-run
 
+.PHONY: install-latest-archinstall
+archinstall:
+	pip install -U archinstall
+
 .PHONY: archinstall-git
 archinstall-git: clean # Install latest version of archinstall
 	pacman -Sy --noconfirm git glibc python-pip
