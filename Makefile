@@ -17,4 +17,4 @@ dry-run: # Dry run
 
 .PHONY: clean
 clean:
-        rm -rfd .archinstall
+	rm -rfd .archinstall
