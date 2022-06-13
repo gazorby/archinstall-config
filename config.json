@@ -21,7 +21,7 @@
   ],
   "keyboard-language": "us",
   "mirror-region": {
-    "Worldwide": {
+    "France": {
       "https://archlinux.vi-di.fr/$repo/os/$arch": true,
       "https://mirror.cyberbits.eu/archlinux/$repo/os/$arch": true,
       "https://mirrors.eric.ovh/arch/$repo/os/$arch": true,
