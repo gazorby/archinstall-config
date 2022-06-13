@@ -15,28 +15,63 @@
       },
       {
         "btrfs": {
-          "subvolumes": {
-            "@": { "mountpoint": "/", "options": ["compress"] },
-            "@home": { "mountpoint": "/home", "options": ["compress"] },
-            "@snapshots": {
+          "subvolumes": [
+            {
+              "mountpoint": "/",
+              "name": "@",
+              "nodatacow": false,
+              "options": [
+                "compress"
+              ]
+            },
+            {
+              "mountpoint": "/home",
+              "name": "@home",
+              "nodatacow": false,
+              "options": [
+                "compress"
+              ]
+            },
+            {
               "mountpoint": "/.snapshots",
-              "options": ["compress"]
+              "name": "@snapshot",
+              "nodatacow": false,
+              "options": [
+                "compress"
+              ]
             },
-            "@log": { "mountpoint": "/var/log", "options": ["compress"] },
-            "@pkg": {
+            {
+              "mountpoint": "/var/log",
+              "name": "@log",
+              "nodatacow": false,
+              "options": [
+                "compress"
+              ]
+            },
+            {
               "mountpoint": "/var/cache/pacman/pkg",
-              "options": ["compress"]
+              "name": "@pkg",
+              "nodatacow": false,
+              "options": [
+                "compress"
+              ]
             },
-            "@VMs": {
+            {
               "mountpoint": "/var/lib/libvirt/",
-              "options": ["compress"]
+              "name": "@VMs",
+              "nodatacow": false,
+              "options": [
+                "compress"
+              ]
             }
-          }
+          ]
         },
         "encrypted": true,
         "filesystem": {
           "format": "btrfs",
-          "mount_options": ["compress=zstd"]
+          "mount_options": [
+            "compress=zstd"
+          ]
         },
         "format": true,
         "mountpoint": "/",
