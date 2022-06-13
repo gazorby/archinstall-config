@@ -14,3 +14,7 @@ install: # Run installer using config files
 .PHONY: dry-run
 dry-run: # Dry run
 	python -m archinstall --config config.json --creds creds.json --disk_layouts=disk-layouts.json --dry-run
+
+.PHONY: clean
+clean:
+        rm -rfd .archinstall
