@@ -44,6 +44,11 @@
     }
   },
   "nic": {
+    "dhcp": true,
+    "dns": null,
+    "gateway": null,
+    "iface": null,
+    "ip": null,
     "type": "nm"
   },
   "ntp": true,
