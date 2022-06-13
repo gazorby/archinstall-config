@@ -9,7 +9,7 @@ archinstall-git: # Install latest version of archinstall
 
 .PHONY: install
 install: # Run installer using config files
-	python -m archinstall --config config.json --creds creds.json --disk_layouts=disk-layouts.json
+	python -m archinstall --config config.json --creds creds.json --disk_layouts disk-layouts.json
 
 .PHONY: dry-run
 dry-run: # Dry run
