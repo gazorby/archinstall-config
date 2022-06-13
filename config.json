@@ -20,29 +20,6 @@
     "linux"
   ],
   "keyboard-language": "us",
-  "mirror-region": {
-    "France": {
-      "https://archlinux.vi-di.fr/$repo/os/$arch": true,
-      "https://mirror.cyberbits.eu/archlinux/$repo/os/$arch": true,
-      "https://mirrors.eric.ovh/arch/$repo/os/$arch": true,
-      "https://mirrors.gandi.net/archlinux/$repo/os/$arch": true,
-      "https://mirror.ibakerserver.pt/Arch/$repo/os/$arch": true,
-      "https://arch.juline.tech/$repo/os/$arch": true,
-      "https://mirroir.labhouse.fr/arch/$repo/os/$arch": true,
-      "https://arch-mirror.cloud.louifox.house/$repo/os/$arch": true,
-      "https://archlinux.mailtunnel.eu/$repo/os/$arch": true,
-      "https://mirrors.celianvdb.fr/archlinux/$repo/os/$arch": true,
-      "https://arch.nimukaito.net/$repo/os/$arch": true,
-      "https://mirror.oldsql.cc/archlinux/$repo/os/$arch": true,
-      "https://mirrors.slaanesh.org/archlinux/$repo/os/$arch": true,
-      "https://mirror.sysa.tech/archlinux/$repo/os/$arch": true,
-      "https://mirror.thekinrar.fr/archlinux/$repo/os/$arch": true,
-      "https://mirror.theo546.fr/archlinux/$repo/os/$arch": true,
-      "https://mirror.wormhole.eu/archlinux/$repo/os/$arch": true,
-      "https://mirroir.wptheme.fr/archlinux/$repo/os/$arch": true,
-      "https://arch.yourlabs.org/$repo/os/$arch": true
-    }
-  },
   "nic": {
     "type": "nm"
   },
