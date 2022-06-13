@@ -8,7 +8,7 @@ archinstall:
 .PHONY: archinstall-git
 archinstall-git: clean # Install latest version of archinstall
 	pacman -Sy --noconfirm git glibc python-pip
-	pip uninstall --yes archinstall
+	pacman -Rs --noconfirm archinstall; pip uninstall --yes archinstall
 	git clone https://github.com/archlinux/archinstall .archinstall
 	cd .archinstall && python setup.py install
 
