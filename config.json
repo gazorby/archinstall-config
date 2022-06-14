@@ -58,7 +58,8 @@
     "ufw",
     "wget",
     "yarn",
-    "bitwarden-cli"
+    "bitwarden-cli",
+    "jq"
   ],
   "profile": "kde",
   "services": [
