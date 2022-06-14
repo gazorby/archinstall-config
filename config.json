@@ -57,7 +57,8 @@
     "starship",
     "ufw",
     "wget",
-    "yarn"
+    "yarn",
+    "bitwarden-cli"
   ],
   "profile": "kde",
   "services": [
