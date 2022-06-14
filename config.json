@@ -1,6 +1,6 @@
 {
   "audio": "pipewire",
-  "bootloader": "systemd-bootctl",
+  "bootloader": "grub-install",
   "custom-commands": [
     "usermod -aG docker gazorby",
     "pacman-key --init",
