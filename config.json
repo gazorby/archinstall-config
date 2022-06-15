@@ -75,13 +75,16 @@
     "fx",
     "fq",
     "mcfly",
-    "broot"
+    "broot",
+    "open-vm-tools"
   ],
   "profile": "gnome",
   "services": [
     "NetworkManager.service",
     "docker.service",
-    "snapper-timeline.timer"
+    "snapper-timeline.timer",
+    "vmtoolsd.service",
+    "vmware-vmblock-fuse.service"
   ],
   "swap": true,
   "sys-encoding": "utf-8",
