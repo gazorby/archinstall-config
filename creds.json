@@ -1,8 +1,11 @@
 {
     "!encryption-password" : "1234",
-    "!superusers" : {
-        "gazorby": {
-            "!password": "1234"
+    "!root-password": "1234",
+    "!users" : [
+        {
+            "username": "gazorby",
+            "!password": "1234",
+            "sudo": true
         }
-    }
+    ]
 }
