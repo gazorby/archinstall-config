@@ -10,7 +10,7 @@
     "pacman -U --noconfirm 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'",
     "echo -e '\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist\n' | sudo tee -a /etc/pacman.conf",
     "pacman -Syy",
-    "pacman -Rs archlinux-appstream-data",
+    "pacman -Rs gnome-software-packagekit-plugin archlinux-appstream-data",
     "pacman -Sy --noconfirm paru downgrade powerpill asdf-vm pamac-aur xkb-altgr-weur",
     "chsh -s /bin/fish gazorby"
   ],
