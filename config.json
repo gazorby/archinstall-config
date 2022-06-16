@@ -20,6 +20,7 @@
   "hostname": "bigbox",
   "kernels": ["linux"],
   "keyboard-language": "us",
+  "additional-repositories": ["multilib"],
   "mirror-region": "France",
   "nic": {
     "dhcp": true,
