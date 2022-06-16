@@ -63,7 +63,7 @@
     "bitwarden-cli",
     "jq"
   ],
-  "profile": "kde",
+  "profile": "gnome",
   "services": [
     "NetworkManager.service",
     "docker.service",
