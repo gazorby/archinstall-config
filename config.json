@@ -11,7 +11,7 @@
     "echo -e '\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist\n' | sudo tee -a /etc/pacman.conf",
     "pacman -Syy",
     "pacman -R --noconfirm gnome-software-packagekit-plugin archlinux-appstream-data",
-    "pacman -Sy --noconfirm paru downgrade powerpill asdf-vm pamac-aur",
+    "pacman -Sy --noconfirm paru downgrade powerpill asdf-vm pamac-aur nerd-fonts-fira-code ttf-twemoji",
     "chsh -s /bin/fish gazorby"
   ],
   "filesystem": "btrfs",
