@@ -12,7 +12,7 @@
     "pacman -Syy",
     "pacman -R --noconfirm gnome-software-packagekit-plugin archlinux-appstream-data",
     "pacman -Sy --noconfirm paru downgrade powerpill asdf-vm pamac-aur",
-    "paru -S --noconfirm xkb-altgr-weur",
+    "sudo -u gazorby -- paru -S --noconfirm xkb-altgr-weur",
     "chsh -s /bin/fish gazorby"
   ],
   "filesystem": "btrfs",
