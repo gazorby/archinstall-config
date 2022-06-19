@@ -75,7 +75,8 @@
     "fx",
     "fq",
     "mcfly",
-    "broot"
+    "broot",
+    "man"
   ],
   "profile": "gnome",
   "services": [
