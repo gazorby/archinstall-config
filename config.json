@@ -13,8 +13,9 @@
     "pacman -R --noconfirm gnome-software-packagekit-plugin archlinux-appstream-data",
     "pacman -Sy --noconfirm paru downgrade powerpill asdf-vm pamac-aur nerd-fonts-fira-code ttf-twemoji",
     "echo 'gazorby ALL = NOPASSWD: /usr/sbin/paru' | EDITOR='tee -a' visudo",
+    "echo 'gazorby ALL = NOPASSWD: /usr/sbin/pacman' | EDITOR='tee -a' visudo",
     "sudo -u gazorby paru -S --noconfirm xkb-altgr-weur await doggo-bin",
-    "sed -i '$d' /etc/sudoers",
+    "head -n -2 /etc/sudoers",
     "chsh -s /bin/fish gazorby"
   ],
   "filesystem": "btrfs",
@@ -72,7 +73,8 @@
     "bottom",
     "xh",
     "fx",
-    "fq"
+    "fq",
+    "mcfly"
   ],
   "profile": "gnome",
   "services": [
