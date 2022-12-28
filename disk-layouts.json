@@ -15,14 +15,33 @@
       },
       {
         "btrfs": {
-          "subvolumes": {
-            "@": "/",
-            "@home": "/home",
-            "@snapshots": "/.snapshots",
-            "@log": "/var/log",
-            "@pkg": "/var/cache/pacman/pkg",
-            "@VMs": "/var/lib/libvirt/"
-          }
+          "subvolumes": [
+            {
+                "mountpoint": "/",
+                "name": "@"
+            },
+            {
+                "mountpoint": "/home",
+                "name": "@home"
+            },
+            {
+                "mountpoint": "/var/log",
+                "name": "@log"
+            },
+            {
+              "mountpoint": "/var/cache/pacman/pkg",
+              "name": "@pkg"
+            },
+            {
+                "mountpoint": "/.snapshots",
+                "name": "@snapshots"
+            },
+            {
+                "mountpoint": "/var/lib/libvirt/",
+                "name": "@vms",
+                "nodatacow": false
+            }
+          ]
         },
         "encrypted": true,
         "filesystem": {
