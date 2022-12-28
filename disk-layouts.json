@@ -10,7 +10,8 @@
         "mountpoint": "/boot",
         "size": "513MB",
         "start": "5MB",
-        "type": "primary"
+        "type": "primary",
+        "wipe": true
       },
       {
         "btrfs": {
@@ -61,7 +62,8 @@
         "mountpoint": "/",
         "size": "100%",
         "start": "518MB",
-        "type": "primary"
+        "type": "primary",
+        "wipe": true
       }
     ],
     "wipe": true
