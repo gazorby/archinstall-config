@@ -7,7 +7,6 @@
         "filesystem": {
           "format": "fat32"
         },
-        "format": true,
         "mountpoint": "/boot",
         "size": "513MB",
         "start": "5MB",
@@ -48,7 +47,7 @@
             },
             {
               "compress": false,
-              "mountpoint": "/var/lib/libvirt/",
+              "mountpoint": "/var/lib/libvirt",
               "name": "@vms",
               "nodatacow": true
             }
@@ -57,11 +56,8 @@
         "encrypted": true,
         "filesystem": {
           "format": "btrfs",
-          "mount_options": [
-            "compress=zstd"
-          ]
+          "mount_options": ["compress=zstd"]
         },
-        "format": true,
         "mountpoint": "/",
         "size": "100%",
         "start": "518MB",
