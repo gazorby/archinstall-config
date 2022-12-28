@@ -1,12 +1,11 @@
 {
-  "config_version": "2.5.1",
-  "version": "2.5.1",
   "additional-repositories": [
     "multilib"
   ],
   "archinstall-language": "English",
   "audio": "pipewire",
   "bootloader": "grub-install",
+  "config_version": "2.5.1",
   "custom-commands": [
     "usermod -aG docker gazorby",
     "pacman-key --init",
@@ -75,6 +74,7 @@
     "bitwarden-cli",
     "jq",
     "git-delta",
+    "polkit",
     "duf",
     "tldr",
     "bottom",
@@ -97,5 +97,6 @@
   "swap": true,
   "sys-encoding": "utf-8",
   "sys-language": "en_US",
-  "timezone": "Europe/Paris"
+  "timezone": "Europe/Paris",
+  "version": "2.5.1"
 }
