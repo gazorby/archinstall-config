@@ -17,29 +17,40 @@
         "btrfs": {
           "subvolumes": [
             {
-                "mountpoint": "/",
-                "name": "@"
+              "compress": false,
+              "mountpoint": "/",
+              "name": "@",
+              "nodatacow": false
             },
             {
-                "mountpoint": "/home",
-                "name": "@home"
+              "compress": false,
+              "mountpoint": "/home",
+              "name": "@home",
+              "nodatacow": false
             },
             {
-                "mountpoint": "/var/log",
-                "name": "@log"
+              "compress": false,
+              "mountpoint": "/var/log",
+              "name": "@log",
+              "nodatacow": false
             },
             {
+              "compress": false,
               "mountpoint": "/var/cache/pacman/pkg",
-              "name": "@pkg"
+              "name": "@pkg",
+              "nodatacow": false
             },
             {
-                "mountpoint": "/.snapshots",
-                "name": "@snapshots"
+              "compress": false,
+              "mountpoint": "/.snapshots",
+              "name": "@snapshots",
+              "nodatacow": false
             },
             {
-                "mountpoint": "/var/lib/libvirt/",
-                "name": "@vms",
-                "nodatacow": false
+              "compress": false,
+              "mountpoint": "/var/lib/libvirt/",
+              "name": "@vms",
+              "nodatacow": true
             }
           ]
         },
