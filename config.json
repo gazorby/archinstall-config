@@ -6,7 +6,7 @@
   ],
   "archinstall-language": "English",
   "audio": "pipewire",
-  "bootloader": "grub-install",
+  "bootloader": "systemd-bootctl",
   "custom-commands": [
     "usermod -aG docker gazorby",
     "pacman-key --init",
