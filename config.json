@@ -21,7 +21,7 @@
     "echo 'gazorby ALL = NOPASSWD: /usr/sbin/paru' | EDITOR='tee -a' visudo",
     "echo 'gazorby ALL = NOPASSWD: /usr/sbin/pacman' | EDITOR='tee -a' visudo",
     "sudo -u gazorby paru -S --noconfirm xkb-altgr-weur snapper-rollback",
-    "head -n -2 /etc/sudoers > /etc/sudoers",
+    "head -n -2 /etc/sudoers | EDITOR='tee' visudo",
     "chsh -s /bin/fish gazorby"
   ],
   "filesystem": "btrfs",
