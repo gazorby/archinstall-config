@@ -89,7 +89,7 @@
     "unzip",
     "man"
   ],
-  "profile": "gnome",
+  "profile": "sway",
   "services": [
     "NetworkManager.service",
     "docker.service",
