@@ -1,4 +1,8 @@
 {
+  "additional-repositories": [
+    "multilib"
+  ],
+  "archinstall-language": "English",
   "audio": "pipewire",
   "bootloader": "grub-install",
   "custom-commands": [
@@ -20,12 +24,14 @@
   ],
   "filesystem": "btrfs",
   "gfx_driver": "VMware / VirtualBox (open-source)",
-  "archinstall-language": "English",
-  "harddrives": ["/dev/sda"],
+  "harddrives": [
+    "/dev/sda"
+  ],
   "hostname": "bigbox",
-  "kernels": ["linux"],
+  "kernels": [
+    "linux"
+  ],
   "keyboard-language": "us",
-  "additional-repositories": ["multilib"],
   "mirror-region": "France",
   "nic": {
     "dhcp": true,
@@ -76,8 +82,11 @@
     "fq",
     "mcfly",
     "broot",
-    "man",
-    "vivid"
+    "vivid",
+    "chafa",
+    "hexyl",
+    "unzip",
+    "man"
   ],
   "profile": "gnome",
   "services": [
